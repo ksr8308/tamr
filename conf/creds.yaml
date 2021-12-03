@@ -1,0 +1,37 @@
+# hive:
+#   - name: "legacy"
+#     # Host name of hive2 server
+#     host: $HIVE_HOSTNAME
+#     # Port number of hive2 server
+#     port: $HIVE_PORT
+#     # User name to be used to connect to hive2 server
+#     user: $HIVE_USER
+#     # Password to be used to connect to hive2 server
+#     pwd: $HIVE_PWD
+#     # The value of hive.server2.authentication used by HiveServer2: ['CUSTOM', 'LDAP'] if using password
+#     authMechanism: CUSTOM
+#     # If a table is partitioned, the max number of partitions to sample from (0, 1000]
+#     maxNumPartition: 100
+#     getDataQuery: "select * from {}"
+#     profileDatasetName: "legacy_column_metadata"
+#     sid: ""
+    
+oracle :
+  - name: "legacy"
+    host: $ORACLE_HOST_LEGACY
+    port: $ORACLE_PORT_LEGACY
+    user: $ORACLE_USER_LEGACY
+    pwd: $ORACLE_PWD_LEGACY
+    sid: $ORACLE_SID_LEGACY
+    profileDatasetName: "mdm_column_metadata"
+    getTableQuery: "SELECT TABLE_NAME from all_tables WHERE owner = 'PND'"    
+    getDataQuery: "SELECT * FROM {}"  
+unify:
+    protocol: "http"
+    hostname: $TAMR_UNIFY_HOSTNAME
+    port: $TAMR_UNIFY_PORT
+    # Port of df-golden-record husk app
+    grPort: $TAMR_UNIFY_GR_PORT
+    connectPort: $TAMR_UNIFY_CONNECT_PORT
+    user: $TAMR_UNIFY_USER
+    pwd: $TAMR_UNIFY_PWD

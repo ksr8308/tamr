@@ -1,0 +1,40 @@
+- name: Exception_Column_NEW
+  inputs:
+    - metadataFileName: legacy_column_metadata_profiled.csv
+      primaryKeyColumnName: Tamr_Profiling_Seq
+    # - metadataFileName: mdm_column_metadata_profiled.csv
+    #   primaryKeyColumnName: Tamr_Profiling_Seq 
+    # - metadataFileName: mixed_column_metadata_profiled.csv
+    #   primaryKeyColumnName: Tamr_Profiling_Seq  
+# - name: Schema_Discovery
+#   inputs:
+#     - metadataFileName: mdm_column_metadata_profiled.csv
+#       primaryKeyColumnName: Tamr_Profiling_Seq
+#     - metadataFileName: legacy_column_metadata_profiled.csv
+#       primaryKeyColumnName: Tamr_Profiling_Seq
+#     - metadataFileName: mixed_column_metadata_profiled.csv
+#       primaryKeyColumnName: Tamr_Profiling_Seq
+# - name: label_transfer
+#   inputs:
+#     - metadataFileName: mdm_column_metadata_profiled.csv
+#       primaryKeyColumnName: Tamr_Profiling_Seq
+#     - metadataFileName: legacy_column_metadata_profiled.csv
+#       primaryKeyColumnName: Tamr_Profiling_Seq
+#     - metadataFileName: mixed_column_metadata_profiled.csv
+#       primaryKeyColumnName: Tamr_Profiling_Seq
+# - name: label_exception
+#   inputs:
+#     - metadataFileName: mdm_column_metadata_profiled.csv
+#       primaryKeyColumnName: Tamr_Profiling_Seq
+#     - metadataFileName: legacy_column_metadata_profiled.csv
+#       primaryKeyColumnName: Tamr_Profiling_Seq
+#     - metadataFileName: mixed_column_metadata_profiled.csv
+#       primaryKeyColumnName: Tamr_Profiling_Seq
+# - name: label_exception2
+#   inputs:
+#     - metadataFileName: mdm_column_metadata_profiled.csv
+#       primaryKeyColumnName: Tamr_Profiling_Seq
+#     - metadataFileName: legacy_column_hive_metadata_profiled.csv
+#       primaryKeyColumnName: Tamr_Profiling_Seq
+#     - metadataFileName: mixed_column_metadata_profiled.csv
+#       primaryKeyColumnName: Tamr_Profiling_Seq

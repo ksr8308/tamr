@@ -1,0 +1,13 @@
+unify:
+  - cred_cat: "unify"    
+    project_name: "Schema_Discovery"
+    project_gr_name: "Schema_Discovery_GR"
+exception:
+  - cred_cat: "unify"
+    project_name: "Exception column"
+    project_gr_name: ""
+legacy:
+  - cred_cat: "oracle"
+    cred_src: "legacy"
+    query_src: "legacy"    
+    database_type: "oracle"
